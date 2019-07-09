@@ -1,0 +1,63 @@
+@font-face{
+	font-family: maddy;
+	src: url('curly.ttf');
+}
+
+@font-face{
+	font-family: header;
+	src: url('shade.ttf');
+}
+
+@font-face{
+	font-family: speed;
+	src: url('speed.ttf');
+}
+
+body{
+	background-image: url(2.jpg);
+	background-position: center;
+	color: white;
+	overflow: hidden;	
+	font-family: maddy;
+	height: 100vh;
+	-webkit-transition: background-image 2s ease;
+	   -moz-transition: background-image 2s ease;
+	    -ms-transition: background-image 2s ease;
+	     -o-transition: background-image 2s ease;
+	        transition: background-image 2s ease;
+}
+
+h1{
+	text-transform: uppercase;
+}
+
+#elem{
+	color: #fe0f48;
+}
+
+h2{
+	align-self: center;	
+	font-size: 45px;	
+	color: #ff4499;
+	/* width: 25ch; */
+	text-align: center;
+	background-color: rgba(0, 0, 255, 0.5);
+	text-decoration: underline;
+}
+.container{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	overflow: auto;
+	text-align: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+  body{
+  	background-position: center;
+  	background-size: cover;
+  	background-repeat: no-repeat;
+  }
+}
