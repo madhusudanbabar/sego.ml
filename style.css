@@ -1,23 +1,23 @@
 @font-face{
 	font-family: maddy;
-	src: url('curly.ttf');
+	src: url('https://res.cloudinary.com/krypt9/raw/upload/v1563087137/sego.ml/curly_ace0ww.ttf');
 }
 
 @font-face{
 	font-family: header;
-	src: url('shade.ttf');
+	src: url('https://res.cloudinary.com/krypt9/raw/upload/v1563087137/sego.ml/shade_skqy2s.ttf');
 }
 
 @font-face{
 	font-family: speed;
-	src: url('speed.ttf');
+	src: url('https://res.cloudinary.com/krypt9/raw/upload/v1563087137/sego.ml/speed_vbbijb.ttf');
 }
 
 body{
 	background-image: url(2.jpg);
 	background-position: center;
 	color: white;
-	overflow: hidden;	
+	overflow: hidden;
 	font-family: maddy;
 	height: 100vh;
 	-webkit-transition: background-image 2s ease;
@@ -36,8 +36,8 @@ h1{
 }
 
 h2{
-	align-self: center;	
-	font-size: 45px;	
+	align-self: center;
+	font-size: 45px;
 	color: #ff4499;
 	/* width: 25ch; */
 	text-align: center;
