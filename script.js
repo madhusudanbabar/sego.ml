@@ -5,10 +5,8 @@ const typewriter=function (elem,list,speed) {
 	var total=list.length-1;
 	change=function(){
 		let current = list[Math.floor(Math.random()*total)];
-		//console.log(current);
 		let w=document.getElementsByTagName('h2')[0];
 		w.style.width=w.innerText.length+2+"ch";
-		// elem.innerHTML="#"+current;
 		type(current)
 	}
 	var deleting=false;
@@ -28,9 +26,6 @@ const typewriter=function (elem,list,speed) {
 	setInterval(im,2000);
 }
 
-// typewriter.prototype.change=function () {
-
-// }
 
 function init() {
 	const elem=document.getElementById('elem');
