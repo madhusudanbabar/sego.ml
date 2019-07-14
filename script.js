@@ -14,15 +14,7 @@ const typewriter=function (elem,list,speed) {
 	var deleting=false;
 	type=function (word) {
 		for(letter in word){
-			//console.log(letter);
-			// if (letter<word.length-1) {
 			elem.innerHTML="#" +word;
-			// }
-			// else if (letter==word.length-1) {
-			// 	console.log("start deleting");
-			// 	elem.innerHTML="";
-			// }
-			// setTimeout(type(word),2000);
 	}
 }
 
@@ -31,7 +23,7 @@ const typewriter=function (elem,list,speed) {
 		let image="url('" +Math.floor(Math.random()*8+1) +".jpg')";
 		console.log(image);
 		body.style.backgroundImage=image;
-	}	
+	}
 	setInterval(change,speed);
 	setInterval(im,2000);
 }
