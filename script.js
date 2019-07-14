@@ -19,7 +19,8 @@ const typewriter=function (elem,list,speed) {
 	im=function(){
 		let body=document.getElementsByTagName('body')[0];
 		// let image="url('" +Math.floor(Math.random()*8+1) +".jpg')";
-		var image=select(Math.floor(Math.random()*8+1));
+		var cdn =selectImage(Math.floor(Math.random()*8+1));
+		let image="url('" +cdn +"')";
 		console.log(image);
 		body.style.backgroundImage=image;
 	}
@@ -27,7 +28,7 @@ const typewriter=function (elem,list,speed) {
 	setInterval(im,2000);
 }
 
-function select(num){
+function selectImage(num){
 	switch (num) {
 		case 1:
 			return "https://res.cloudinary.com/krypt9/image/upload/v1563087137/sego.ml/1_cffyet.jpg";
